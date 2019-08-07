@@ -20,7 +20,8 @@ import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import {PromotionService} from './services/promotion.service';
 import { LoginComponent } from './login/login.component';
-import {MatDialogModule} from '@angular/material';
+import {MatCheckboxModule, MatDialogModule, MatFormFieldModule, MatInputModule} from '@angular/material';
+import {FormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,12 +39,16 @@ import {MatDialogModule} from '@angular/material';
     BrowserModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCheckboxModule,
     MatDialogModule,
     MatToolbarModule,
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule
   ],
   entryComponents: [
     LoginComponent
