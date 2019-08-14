@@ -22,6 +22,10 @@ import {PromotionService} from './services/promotion.service';
 import { LoginComponent } from './login/login.component';
 import {MatCheckboxModule, MatDialogModule, MatFormFieldModule, MatInputModule} from '@angular/material';
 import {FormsModule} from '@angular/forms';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +45,8 @@ import {FormsModule} from '@angular/forms';
     FlexLayoutModule,
     MatFormFieldModule,
     MatInputModule,
+    MatSelectModule,
+    MatSlideToggleModule,
     MatCheckboxModule,
     MatDialogModule,
     MatToolbarModule,
@@ -48,7 +54,8 @@ import {FormsModule} from '@angular/forms';
     MatGridListModule,
     MatCardModule,
     MatButtonModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   entryComponents: [
     LoginComponent
