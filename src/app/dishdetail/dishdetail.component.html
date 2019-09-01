@@ -26,7 +26,7 @@
     </mat-card>
   </div>
 
-  <div fxFlex="40">
+  <div fxFlex="40" *ngIf="selectedDish" >
     <h2>Comments:</h2>
     <mat-list >
       <mat-list-item *ngFor="let com of selectedDish.comments" >
@@ -34,6 +34,9 @@
         <p matLine>Stars:{{com.rating}}</p>
         <p matLine>--{{com.author}}&nbsp;{{com.date| date }}</p></mat-list-item>
     </mat-list>
+  </div>
+  <div [hidden]="selectedDish">
+    <mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>
   </div>
 
 </div>
